@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonio di Miriam & Charles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --wedding-blue: #2a40c2; 
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #ffffff; /* Sfondo pagina bianco */
+            font-family: 'Dancing Script', cursive;
+            color: var(--wedding-blue);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.5rem, 10vw, 3.5rem); /* Si adatta alla grandezza schermo */
+            line-height: 0.9;
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .intro-text {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        .illustration {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        .date-time {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin: 40px 0;
+            line-height: 1.1;
+            font-weight: 800;
+        }
+
+        .details {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .details strong {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .rsvp-section {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin: 40px 0;
+            padding: 20px 0;
+            border-top: 1.5px solid var(--wedding-blue);
+            border-bottom: 1.5px solid var(--wedding-blue);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .iban-section {
+            margin-top: 50px;
+            padding: 20px;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .iban-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .iban-code {
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            word-break: break-all;
+            background: #f8faff;
+            padding: 15px;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .footer {
+            margin: 60px 0 20px 0;
+            font-size: 1.4rem;
+        }
+
+        /* Ottimizzazione per mobile */
+        @media (max-width: 480px) {
+            body { padding: 20px 15px; }
+            .intro-text { font-size: 1.3rem; }
+            .date-time { font-size: 1.6rem; }
+            .details { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>MIRIAM &<br>CHARLES</h1>
+
+        <p class="intro-text">Sono felici di invitarvi al loro matrimonio</p>
+
+        <img src="Micc_E_Charles_blu.png" alt="Sposi" class="illustration">
+
+        <div class="date-time">
+            5 SETTEMBRE 2026<br>
+            ORE 17.00
+        </div>
+
+        <div class="details">
+            <p>Chiesa di Maria Santissima di tutte le Grazie
+            <strong>Siracusa</strong></p>
+            
+            <p>Seguiranno i festeggiamenti presso
+            <strong>Villa Isola</strong></p>
+        </div>
+
+        <div class="rsvp-section">
+            È gradita gentile conferma<br>entro il 30 Marzo 2026
+        </div>
+
+        <div class="iban-section">
+            <div class="iban-title">Il regalo più grande è la vostra presenza, ma se desiderate contribuire al nostro sogno:</div>
+            <code class="iban-code">IT 00 X 00000 00000 000000000000</code>
+            <p style="font-size: 1rem; margin-top: 10px; font-weight: bold;">Intestato a Miriam e Charles</p>
+        </div>
+
+        <p class="footer">Vi aspettiamo con gioia!</p>
+    </div>
+
+</body>
+</html>
